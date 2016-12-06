@@ -10,25 +10,27 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [IRC][ircurl] on freenode at `#linuxserver.io`
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
-#linuxserver/ubooquity
+# lsioarmhf/ubooquity
+[![](https://images.microbadger.com/badges/version/lsioarmhf/ubooquity.svg)](https://microbadger.com/images/lsioarmhf/ubooquity "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/ubooquity.svg)](http://microbadger.com/images/lsioarmhf/ubooquity "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/ubooquity.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/ubooquity.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-ubooquity)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-ubooquity/)
+[hub]: https://hub.docker.com/r/lsioarmhf/ubooquity/
 
-Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.
+[Ubooquity][ubooquityurl] is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.
 
-
-[![ubooquity](https://raw.githubusercontent.com/chbmb/docker-templates/master/linuxserver.io/img/ubooquity-icon.png)][ubooquityurl]
+[![ubooquity](https://vaemendis.net/ubooquity/data/images/diagram2.png)][ubooquityurl]
 [ubooquityurl]: https://vaemendis.net/ubooquity/
 
 ## Usage
 
 ```
 docker create \
-  --name=uboquity \
+  --name=ubooquity \
   -v <path to data>:/config \
-  -v <path to books>:/books:ro \
-  -v <path to comics>:/comics:ro \
+  -v <path to books>:/books \
+  -v <path to comics>:/comics \
+  -v <path to raw files>:/files \
   -e PGID=<gid> -e PUID=<uid>  \
   -p 2202:2202 \
-  linuxserver/ubooquity
+  lsioarmhf/ubooquity
 ```
 
 ## Parameters
@@ -40,14 +42,15 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 
 
-* `-p 2202` - the webui port
-* `-v /config` - your ubooquity database and preferences
-* `-v /books` - your ebook library
-* `-v /comics` - your comic library
+* `-p 2202` - the port(s)
+* `-v /config` - Config files and database for ubooquity
+* `-v /books` - Location of books.
+* `-v /comics` - Location of comics.
+* `-v /files` - Location of raw files.
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it <container-name> /bin/bash`.
+It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it ubooquity /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -61,10 +64,15 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ```
 
 ## Setting up the application
+`IMPORTANT... THIS IS THE ARMHF VERSION`
 
-Access the admin page at `http://<your-ip>:2022/ubooquity/admin/`
+This container will automatically scan your files at startup.
 
-Access WebUI at `http://<your-ip>:2022/ubooquity/`
+**IMPORTANT**
+Access the admin page at `http://<your-ip>:2022/ubooquity/admin/` and set a password. 
+
+Then you can access the webui at `http://<your-ip>:2022/ubooquity/`
+
 
 ## Info
 
@@ -77,8 +85,8 @@ Access WebUI at `http://<your-ip>:2022/ubooquity/`
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/ubooquity`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/ubooquity`
 
 ## Versions
 
-+ **06.12.16:** Release 
++ **dd.MM.yy:** Initial Release.
