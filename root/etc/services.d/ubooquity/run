@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+cd /opt/ubooquity || exit
+
+exec \
+	s6-setuidgid abc java \
+	-jar /opt/ubooquity/Ubooquity.jar \
+	--headless --host 0.0.0.0 \
+	--port 2202 --webadmin \
+	--workdir /config

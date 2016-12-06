@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+# make our folders
+mkdir -p \
+	config/fonts
+
+# permissions
+chown -R abc:abc \
+	/config \
+	/opt/ubooquity
