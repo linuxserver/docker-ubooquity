@@ -4,6 +4,10 @@
 mkdir -p \
 	config/fonts
 
+# copy config
+[[ ! -e /config/preferences.xml ]] && \
+	cp /defaults/preferences.xml /config/preferences.xml
+
 # permissions
 chown -R abc:abc \
 	/config \
