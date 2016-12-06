@@ -17,9 +17,6 @@ Ubooquity is a free, lightweight and easy-to-use home server for your comics and
 
 [![ubooquity](https://raw.githubusercontent.com/chbmb/docker-templates/master/linuxserver.io/img/ubooquity-icon.png)][ubooquityurl]
 [ubooquityurl]: https://vaemendis.net/ubooquity/
-Our Plex container has immaculate docs so follow that if in doubt for layout.
-
-`IMPORTANT, replace all instances of <image-name> with the correct dockerhub repo (ie linuxserver/plex) and <container-name> information (ie, plex)`
 
 ## Usage
 
@@ -27,8 +24,8 @@ Our Plex container has immaculate docs so follow that if in doubt for layout.
 docker create \
   --name=uboquity \
   -v <path to data>:/config \
-  -v <path to books>:/books \
-  -v <path to comics>:/comics \
+  -v <path to books>:/books:ro \
+  -v <path to comics>:/comics:ro \
   -e PGID=<gid> -e PUID=<uid>  \
   -p 2202:2202 \
   linuxserver/ubooquity
@@ -43,8 +40,10 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 
 
-* `-p 1234` - the port(s)
-* `-v /config` - explain what lives here
+* `-p 2202` - the webui port
+* `-v /config` - your ubooquity database and preferences
+* `-v /books` - your ebook library
+* `-v /comics` - your comic library
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
@@ -63,8 +62,9 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application
 
-Insert a basic user guide here to get a n00b up and running with the software inside the container. DELETE ME
+Access the admin page at `<your-ip>:2022/ubooquity/admin/`
 
+Access WebUI at `<your-ip>:2022/ubooquity/`
 
 ## Info
 
