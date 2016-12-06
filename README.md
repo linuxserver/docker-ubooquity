@@ -88,4 +88,4 @@ Then you can access the webui at `http://<your-ip>:2022/ubooquity/`
 
 ## Versions
 
-+ **dd.MM.yy:** Initial Release.
++ **06.12.16:** Initial Release.
