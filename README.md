@@ -10,9 +10,9 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [IRC][ircurl] on freenode at `#linuxserver.io`
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
-# lsioarmhf/ubooquity
+# linuxserver/ubooquity
 [![](https://images.microbadger.com/badges/version/lsioarmhf/ubooquity.svg)](https://microbadger.com/images/lsioarmhf/ubooquity "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/ubooquity.svg)](http://microbadger.com/images/lsioarmhf/ubooquity "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/ubooquity.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/ubooquity.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-ubooquity)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-ubooquity/)
-[hub]: https://hub.docker.com/r/lsioarmhf/ubooquity/
+[hub]: https://hub.docker.com/r/linuxserver/ubooquity/
 
 [Ubooquity][ubooquityurl] is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.
 
@@ -30,7 +30,7 @@ docker create \
   -v <path to raw files>:/files \
   -e PGID=<gid> -e PUID=<uid>  \
   -p 2202:2202 \
-  lsioarmhf/ubooquity
+  linuxserver/ubooquity
 ```
 
 ## Parameters
@@ -64,7 +64,6 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ```
 
 ## Setting up the application
-`IMPORTANT... THIS IS THE ARMHF VERSION`
 
 This container will automatically scan your files at startup.
 
@@ -85,7 +84,7 @@ Then you can access the webui at `http://<your-ip>:2022/ubooquity/`
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/ubooquity`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/ubooquity`
 
 ## Versions
 
