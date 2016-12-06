@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userPreferences>
+    <filesPaths/>
+    <comicsPaths>
+        <path>
+            <pathString>/comics</pathString>
+            <authorizedUsers/>
+        </path>
+    </comicsPaths>
+    <booksPaths>
+        <path>
+            <pathString>/books</pathString>
+            <authorizedUsers/>
+        </path>
+    </booksPaths>
+    <users/>
+    <isFilesProviderEnabled>true</isFilesProviderEnabled>
+    <isComicsProviderEnabled>true</isComicsProviderEnabled>
+    <isBooksProviderEnabled>true</isBooksProviderEnabled>
+    <isUserManagementEnabled>false</isUserManagementEnabled>
+    <portNumber>2202</portNumber>
+    <comicWidth>160</comicWidth>
+    <comicHeight>230</comicHeight>
+    <comicsPaginationNumber>30</comicsPaginationNumber>
+    <bookWidth>160</bookWidth>
+    <bookHeight>230</bookHeight>
+    <booksPaginationNumber>30</booksPaginationNumber>
+    <minimizeToTray>false</minimizeToTray>
+    <minimizeOnStartup>false</minimizeOnStartup>
+    <autoscanPeriod>0</autoscanPeriod>
+    <isWebAdminEnabled>false</isWebAdminEnabled>
+    <theme>Default</theme>
+    <isShrinkingCacheEnabled>false</isShrinkingCacheEnabled>
+    <shrunkPageWidth>1536</shrunkPageWidth>
+    <shrunkPageHeight>2400</shrunkPageHeight>
+    <shrinkingCachePath></shrinkingCachePath>
+    <autoScanAtLaunch>true</autoScanAtLaunch>
+    <reverseProxyPrefix>ubooquity</reverseProxyPrefix>
+    <keystorePath></keystorePath>
+    <keystorePassword></keystorePassword>
+    <isOpdsProviderEnabled>true</isOpdsProviderEnabled>
+    <hideEmptyFolder>false</hideEmptyFolder>
+    <folderExclusionPattern></folderExclusionPattern>
+    <bypassSingleRootFolder>false</bypassSingleRootFolder>
+    <enableFolderMetadataDisplay>false</enableFolderMetadataDisplay>
+</userPreferences>
