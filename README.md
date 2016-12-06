@@ -62,9 +62,9 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application
 
-Access the admin page at `<your-ip>:2022/ubooquity/admin/`
+Access the admin page at `http://<your-ip>:2022/ubooquity/admin/`
 
-Access WebUI at `<your-ip>:2022/ubooquity/`
+Access WebUI at `http://<your-ip>:2022/ubooquity/`
 
 ## Info
 
