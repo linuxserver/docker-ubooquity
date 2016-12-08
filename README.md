@@ -16,7 +16,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 Tom, the author of [Ubooquity][ubooquityurl] has created a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.  He has also kindly agreed to let us publish this containerised version of Ubooquity.
 
-[![ubooquity](https://raw.githubusercontent.com/chbmb/docker-templates/master/linuxserver.io/img/ubooquity-icon.png)][ubooquityurl]
+[![ubooquity](https://raw.githubusercontent.com/chbmb/docker-templates/master/linuxserver.io/img/ubooquity-banner.png)][ubooquityurl]
 [ubooquityurl]: https://vaemendis.net/ubooquity/
 
 ## Usage
