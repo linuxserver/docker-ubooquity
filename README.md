@@ -28,6 +28,7 @@ docker create \
   -v <path to books>:/books \
   -v <path to comics>:/comics \
   -v <path to raw files>:/files \
+  -e MAXMEM=<maxmem> \
   -e PGID=<gid> -e PUID=<uid>  \
   -p 2202:2202 \
   linuxserver/ubooquity
@@ -47,10 +48,19 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 * `-v /books` - Location of books.
 * `-v /comics` - Location of comics.
 * `-v /files` - Location of raw files.
+* `-e MAXMEM` - to set the maximum memory
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
 It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it ubooquity /bin/bash`.
+
+###MAXMEM
+
+The quantity of memory allocated to Ubooquity depends on the hardware your are running it on. If this quantity is too small, you might sometime saturate it with when performing memory intensive operations. That’s when you get `java.lang.OutOfMemoryError:` Java heap space errors.
+
+You can explicitly set the amount of memory Ubooquity is allowed to use (be careful to set a value lower than the actual physical memory of your hardware). 
+
+If no value is set it will default to 512MB.
 
 ### User / Group Identifiers
 
