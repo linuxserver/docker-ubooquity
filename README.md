@@ -14,7 +14,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 [![](https://images.microbadger.com/badges/version/lsioarmhf/ubooquity.svg)](https://microbadger.com/images/lsioarmhf/ubooquity "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/ubooquity.svg)](http://microbadger.com/images/lsioarmhf/ubooquity "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/ubooquity.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/ubooquity.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-ubooquity)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-ubooquity/)
 [hub]: https://hub.docker.com/r/linuxserver/ubooquity/
 
-Tom, the author of [Ubooquity][ubooquityurl] has created a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.  He has kindly permitted us to publish this docker container version of Ubooquity.
+Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.
 
 [![ubooquity](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ubooquity-banner.png)][ubooquityurl]
 [ubooquityurl]: https://vaemendis.net/ubooquity/
