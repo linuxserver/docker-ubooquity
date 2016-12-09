@@ -1,12 +1,5 @@
 #!/usr/bin/with-contenv bash
 
-if [ -e "$MAXMEM" ]
-    then
-    JAVAMEM="$MAXMEM"
-    else
-    JAVAMEM="512"
-fi
-
 JAVAMEM=${MAXMEM:-512}
 
 cd /opt/ubooquity || exit
