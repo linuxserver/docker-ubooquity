@@ -54,7 +54,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it ubooquity /bin/bash`.
 
-###MAXMEM
+### MAXMEM
 
 The quantity of memory allocated to Ubooquity depends on the hardware your are running it on. If this quantity is too small, you might sometime saturate it with when performing memory intensive operations. That’s when you get `java.lang.OutOfMemoryError:` Java heap space errors.
 
