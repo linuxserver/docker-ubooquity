@@ -1,9 +1,11 @@
 #!/usr/bin/with-contenv bash
 
+JAVAMEM=${MAXMEM:-512}
+
 cd /opt/ubooquity || exit
 
 exec \
-	s6-setuidgid abc java \
+	s6-setuidgid abc java -Xmx"$JAVAMEM"m \
 	-jar /opt/ubooquity/Ubooquity.jar \
 	--headless --host 0.0.0.0 \
 	--port 2202 --webadmin \
