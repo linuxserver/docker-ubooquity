@@ -78,9 +78,9 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 This container will automatically scan your files at startup.
 
 **IMPORTANT**
-Access the admin page at `http://<your-ip>:2022/ubooquity/admin/` and set a password. 
+Access the admin page at `http://<your-ip>:2202/ubooquity/admin/` and set a password. 
 
-Then you can access the webui at `http://<your-ip>:2022/ubooquity/`
+Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
 
 
 ## Info
