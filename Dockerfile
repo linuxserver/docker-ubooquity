@@ -1,4 +1,4 @@
-FROM lsiobase/alpine
+FROM lsiobase/alpine:3.5
 MAINTAINER sparklyballs
 
 # set version label
@@ -6,20 +6,21 @@ ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
-# package version
+# package version
 ARG UBOOQUITY_VER="1.10.1"
 
-# install build packages
+# install build packages
 RUN \
  apk add --no-cache --virtual=build-dependencies \
 	curl \
 	unzip && \
 
-# install runtime packages
+# install runtime packages
  apk add --no-cache \
+	--repository http://nl.alpinelinux.org/alpine/edge/community \
 	openjdk8-jre-base && \
 
-# install ubooquity
+# install ubooquity
  mkdir -p \
 	/opt/ubooquity \
 	/opt/ubooquity/fonts && \
@@ -28,15 +29,15 @@ RUN \
 	"http://vaemendis.net/ubooquity/downloads/Ubooquity-${UBOOQUITY_VER}.zip" && \
  unzip /tmp/ubooquity.zip -d /opt/ubooquity && \
 
-# cleanup
+# cleanup
  apk del --purge \
 	build-dependencies && \
  rm -rf \
 	/tmp/*
 
-# copy local files
+# copy local files
 COPY root/ /
 
-# ports and volumes
+# ports and volumes
 EXPOSE 2202
 VOLUME /books /comics /config /files
