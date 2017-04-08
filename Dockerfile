@@ -17,7 +17,6 @@ RUN \
 
 # install runtime packages
  apk add --no-cache \
-	--repository http://nl.alpinelinux.org/alpine/edge/community \
 	openjdk8-jre-base && \
 
 # install ubooquity
