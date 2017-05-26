@@ -98,6 +98,7 @@ Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
 
 ## Versions
 
++ **26.05.17:** Rebase to alpine 3.6.
 + **08.04.17:** Switch to java from 3.5 repo, fixes login crashes.
 + **06.02.17:** Rebase to alpine 3.5.
 + **06.12.16:** Initial Release.
