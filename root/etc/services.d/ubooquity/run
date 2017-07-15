@@ -2,12 +2,11 @@
 
 JAVAMEM=${MAXMEM:-512}
 
-cd /opt/ubooquity || exit
+cd /app/ubooquity || exit
 
 exec \
 	s6-setuidgid abc java -Xmx"$JAVAMEM"m \
-	-jar /opt/ubooquity/Ubooquity.jar \
+	-jar /app/ubooquity/Ubooquity.jar \
 	--headless --host 0.0.0.0 \
-	--libraryport 2202 --adminport 2205 \
   --remoteadmin \
 	--workdir /config
