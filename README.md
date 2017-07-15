@@ -31,6 +31,7 @@ docker create \
   -e MAXMEM=<maxmem> \
   -e PGID=<gid> -e PUID=<uid>  \
   -p 2202:2202 \
+  -p 2205:2205 \
   linuxserver/ubooquity
 ```
 
@@ -43,7 +44,8 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 
 
-* `-p 2202` - the port(s)
+* `-p 2202` - the library port
+* `-p 2205` - the admin port
 * `-v /config` - Config files and database for ubooquity
 * `-v /books` - Location of books.
 * `-v /comics` - Location of comics.
@@ -78,9 +80,9 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 This container will automatically scan your files at startup.
 
 **IMPORTANT**
-Access the admin page at `http://<your-ip>:2202/ubooquity/admin/` and set a password. 
+Access the admin page at `http://<your-ip>:2205/ubooquity/admin/` and set a password. 
 
-Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
+Then you can access the webui at `http://<your-ip>:2205/ubooquity/`
 
 
 ## Info
@@ -98,6 +100,7 @@ Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
 
 ## Versions
 
++ **14.07.17:** Upgrade to Ubooquity 2.1.0
 + **26.05.17:** Rebase to alpine 3.6.
 + **08.04.17:** Switch to java from 3.5 repo, fixes login crashes.
 + **06.02.17:** Rebase to alpine 3.5.
