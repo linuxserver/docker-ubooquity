@@ -8,5 +8,6 @@ exec \
 	s6-setuidgid abc java -Xmx"$JAVAMEM"m \
 	-jar /opt/ubooquity/Ubooquity.jar \
 	--headless --host 0.0.0.0 \
-	--port 2202 --webadmin \
+	--libraryport 2202 --adminport 2205 \
+  --remoteadmin \
 	--workdir /config

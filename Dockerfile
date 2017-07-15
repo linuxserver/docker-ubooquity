@@ -7,7 +7,7 @@ ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 # package version
-ARG UBOOQUITY_VER="1.10.1"
+ARG UBOOQUITY_VER="2.1.0"
 
 # install build packages
 RUN \
@@ -38,5 +38,5 @@ RUN \
 COPY root/ /
 
 # ports and volumes
-EXPOSE 2202
+EXPOSE 2202 2205
 VOLUME /books /comics /config /files
