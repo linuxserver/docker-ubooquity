@@ -81,9 +81,9 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 Ubooquity has now been upgraded to [version 2](http://vaemendis.net/ubooquity/article19/ubooquity-2-1-0), and for existing v1.x users we recommend cleaning your appdata and reinstalling due to changes in the application itself making the two versions essentially incompatible with each other.
 Another of the changes in this version is the separating of the admin interface to a different port.  With version 2 the admin interface is reached at $IP:2203/admin whilst the interface is reached via $IP:2202/.
 
-Access the admin page at `http://<your-ip>:2203/ubooquity/admin/` and set a password. 
+Access the admin page at `http://<your-ip>:2203/admin/` and set a password. 
 
-Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
+Then you can access the webui at `http://<your-ip>:2202/`
 
 This container will automatically scan your files at startup.
 
