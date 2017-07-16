@@ -31,6 +31,7 @@ docker create \
   -e MAXMEM=<maxmem> \
   -e PGID=<gid> -e PUID=<uid>  \
   -p 2202:2202 \
+  -p 2203:2203 \
   linuxserver/ubooquity
 ```
 
@@ -43,7 +44,8 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 
 
-* `-p 2202` - the port(s)
+* `-p 2202` - the library port
+* `-p 2203` - the admin port
 * `-v /config` - Config files and database for ubooquity
 * `-v /books` - Location of books.
 * `-v /comics` - Location of comics.
@@ -75,13 +77,14 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application
 
-This container will automatically scan your files at startup.
-
 **IMPORTANT**
-Access the admin page at `http://<your-ip>:2202/ubooquity/admin/` and set a password. 
+Ubooquity has now been upgraded to [version 2](http://vaemendis.net/ubooquity/article19/ubooquity-2-1-0) and for existing v1.x users we recommend cleaning your appdata and reinstalling, due to changes in the application itself making the two versions essentially incompatible with each other. Also the admin page and library pages are now on separate ports as detailed below.
+
+Access the admin page at `http://<your-ip>:2203/ubooquity/admin/` and set a password. 
 
 Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
 
+This container will automatically scan your files at startup.
 
 ## Info
 
@@ -98,6 +101,7 @@ Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
 
 ## Versions
 
++ **16.07.17:** Upgrade to Ubooquity 2.1.0, see setting up application section for important info for existing v1.x users.
 + **26.05.17:** Rebase to alpine 3.6.
 + **08.04.17:** Switch to java from 3.5 repo, fixes login crashes.
 + **06.02.17:** Rebase to alpine 3.5.

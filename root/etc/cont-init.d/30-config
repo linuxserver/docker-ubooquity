@@ -5,10 +5,10 @@ mkdir -p \
 	config/fonts
 
 # copy config
-[[ ! -e /config/preferences.xml ]] && \
-	cp /defaults/preferences.xml /config/preferences.xml
+[[ ! -e /config/preferences.json ]] && \
+	cp /defaults/preferences.json /config/preferences.json
 
 # permissions
 chown -R abc:abc \
 	/config \
-	/opt/ubooquity
+	/app/ubooquity

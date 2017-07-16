@@ -1,0 +1,47 @@
+{
+  "filesPaths" : [ {
+    "pathString" : "/files",
+    "userName" : [ ]
+  } ],
+  "comicsPaths" : [ {
+    "pathString" : "/comics",
+    "userName" : [ ]
+  } ],
+  "booksPaths" : [ {
+    "pathString" : "/books",
+    "userName" : [ ]
+  } ],
+  "users" : [ ],
+  "isFilesProviderEnabled" : true,
+  "isComicsProviderEnabled" : true,
+  "isBooksProviderEnabled" : true,
+  "isUserManagementEnabled" : false,
+  "libraryPortNumber" : 2202,
+  "adminPortNumber" : 2203,
+  "comicWidth" : 160,
+  "comicHeight" : 230,
+  "comicsPaginationNumber" : 30,
+  "bookWidth" : 160,
+  "bookHeight" : 230,
+  "booksPaginationNumber" : 30,
+  "minimizeToTray" : false,
+  "minimizeOnStartup" : false,
+  "autoscanPeriod" : 0,
+  "isRemoteAdminEnabled" : false,
+  "theme" : "default",
+  "isShrinkingCacheEnabled" : false,
+  "shrunkPageWidth" : 1536,
+  "shrunkPageHeight" : 2500,
+  "shrinkingCachePath" : "",
+  "autoScanAtLaunch" : true,
+  "reverseProxyPrefix" : "ubooquity",
+  "keystorePath" : "",
+  "keystorePassword" : "",
+  "isOpdsProviderEnabled" : false,
+  "folderExclusionPattern" : "",
+  "bypassSingleRootFolder" : false,
+  "enableFolderMetadataDisplay" : false,
+  "bookmarkUsingCookies" : false,
+  "displayTitleInsteadOfFileName" : false,
+  "keepUnreachableSharedFolders" : false
+}
