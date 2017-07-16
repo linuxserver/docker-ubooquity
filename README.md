@@ -77,12 +77,15 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application
 
+Ubooquity has now been upgraded to [version 2](http://vaemendis.net/ubooquity/article19/ubooquity-2-1-0), and for existing v1.x users we recommend cleaning your appdata and reinstalling due to changes in the application itself making the two versions essentially incompatible with each other.
+Another of the changes in this version is the separating of the admin interface to a different port.  With version 2 the admin interface is reached at $IP:2203/admin whilst the interface is reached via $IP:2202/.
+
 This container will automatically scan your files at startup.
 
 **IMPORTANT**
 Access the admin page at `http://<your-ip>:2203/ubooquity/admin/` and set a password. 
 
-Then you can access the webui at `http://<your-ip>:2203/ubooquity/`
+Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
 
 
 ## Info
@@ -100,7 +103,7 @@ Then you can access the webui at `http://<your-ip>:2203/ubooquity/`
 
 ## Versions
 
-+ **14.07.17:** Upgrade to Ubooquity 2.1.0
++ **16.07.17:** Upgrade to Ubooquity 2.1.0, see setting up application section for important info for existing v1.x users.
 + **26.05.17:** Rebase to alpine 3.6.
 + **08.04.17:** Switch to java from 3.5 repo, fixes login crashes.
 + **06.02.17:** Rebase to alpine 3.5.
