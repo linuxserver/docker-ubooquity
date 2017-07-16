@@ -34,7 +34,7 @@
   "shrunkPageHeight" : 2500,
   "shrinkingCachePath" : "",
   "autoScanAtLaunch" : true,
-  "reverseProxyPrefix" : "/ubooquity",
+  "reverseProxyPrefix" : "ubooquity",
   "keystorePath" : "",
   "keystorePassword" : "",
   "isOpdsProviderEnabled" : false,
