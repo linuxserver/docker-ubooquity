@@ -7,7 +7,7 @@ ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 # package version
-ARG UBOOQUITY_VER="2.1.0"
+ARG UBOOQUITY_VER="2.1.1"
 
 # install build packages
 RUN \
