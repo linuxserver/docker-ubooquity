@@ -80,7 +80,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 **IMPORTANT**
 Ubooquity has now been upgraded to [version 2](http://vaemendis.net/ubooquity/article19/ubooquity-2-1-0) and for existing v1.x users we recommend cleaning your appdata and reinstalling, due to changes in the application itself making the two versions essentially incompatible with each other. Also the admin page and library pages are now on separate ports as detailed below.
 
-Access the admin page at `http://<your-ip>:2203/ubooquity/admin/` and set a password. 
+Access the admin page at `http://<your-ip>:2203/ubooquity/admin` and set a password. 
 
 Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
 
@@ -101,6 +101,7 @@ This container will automatically scan your files at startup.
 
 ## Versions
 
++ **23.08.18:** Rebase to alpine 3.8.
 + **09.12.17:** Rebase to alpine 3.7.
 + **07.10.17:** Upgrade to Ubooquity 2.1.1
 + **16.07.17:** Upgrade to Ubooquity 2.1.0, see setting up application section for important info for existing v1.x users.
