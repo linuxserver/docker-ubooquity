@@ -1,0 +1,27 @@
+---
+
+# jenkins variables
+project_name: docker-ubooquity
+external_type: na
+custom_version_command: "curl -IsL -w %{url_effective} -o /dev/null http://vaemendis.net/ubooquity/service/download.php | sed 's|.*Ubooquity-\\\\([0-9\\\\.]*\\\\).zip|\\\\1|'"
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - BUILD_VERSION_ARG = 'UBOOQUITY_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-ubooquity'
+  - CONTAINER_NAME = 'ubooquity'
+  - DOCKERHUB_IMAGE = 'linuxserver/ubooquity'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/ubooquity'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/ubooquity'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH='true'
+  - CI='true'
+  - CI_WEB='true'
+  - CI_PORT='2203'
+  - CI_SSL='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH='/ubooquity/admin'

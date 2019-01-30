@@ -37,7 +37,7 @@ docker create \
 
 ## Parameters
 
-`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
+`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side.
 For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
 So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
 http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
@@ -60,7 +60,7 @@ It is based on alpine linux with s6 overlay, for shell access whilst the contain
 
 The quantity of memory allocated to Ubooquity depends on the hardware your are running it on. If this quantity is too small, you might sometime saturate it with when performing memory intensive operations. That’s when you get `java.lang.OutOfMemoryError:` Java heap space errors.
 
-You can explicitly set the amount of memory Ubooquity is allowed to use (be careful to set a value lower than the actual physical memory of your hardware). 
+You can explicitly set the amount of memory Ubooquity is allowed to use (be careful to set a value lower than the actual physical memory of your hardware).
 
 If no value is set it will default to 512MB.
 
@@ -80,7 +80,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 **IMPORTANT**
 Ubooquity has now been upgraded to [version 2](http://vaemendis.net/ubooquity/article19/ubooquity-2-1-0) and for existing v1.x users we recommend cleaning your appdata and reinstalling, due to changes in the application itself making the two versions essentially incompatible with each other. Also the admin page and library pages are now on separate ports as detailed below.
 
-Access the admin page at `http://<your-ip>:2203/ubooquity/admin` and set a password. 
+Access the admin page at `http://<your-ip>:2203/ubooquity/admin` and set a password.
 
 Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
 
@@ -91,7 +91,7 @@ This container will automatically scan your files at startup.
 * Shell access whilst the container is running: `docker exec -it ubooquity /bin/bash`
 * To monitor the logs of the container in realtime: `docker logs -f ubooquity`
 
-* container version number 
+* container version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' ubooquity`
 
@@ -101,10 +101,11 @@ This container will automatically scan your files at startup.
 
 ## Versions
 
-+ **15.10.18:** Upgrade to Ubooquity 2.1.2
++ **28.01.19:** Add pipeline logic and multi arch.
++ **15.10.18:** Upgrade to Ubooquity 2.1.2.
 + **23.08.18:** Rebase to alpine 3.8.
 + **09.12.17:** Rebase to alpine 3.7.
-+ **07.10.17:** Upgrade to Ubooquity 2.1.1
++ **07.10.17:** Upgrade to Ubooquity 2.1.1.
 + **16.07.17:** Upgrade to Ubooquity 2.1.0, see setting up application section for important info for existing v1.x users.
 + **26.05.17:** Rebase to alpine 3.6.
 + **08.04.17:** Switch to java from 3.5 repo, fixes login crashes.
