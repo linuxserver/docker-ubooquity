@@ -104,7 +104,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
-| `-e MAXMEM=<maxmem>` | To set the maximum memory. |
+| `-e MAXMEM=<maxmem>` | To set the maximum memory. ( ex: set '1024' for 1GB )|
 | `-v /config` | Config files and database for ubooquity. |
 | `-v /books` | Location of books. |
 | `-v /comics` | Location of comics. |
@@ -140,11 +140,9 @@ This container will automatically scan your files at startup.
 
 The quantity of memory allocated to Ubooquity depends on the hardware your are running it on. If this quantity is too small, you might sometime saturate it with when performing memory intensive operations. That’s when you get `java.lang.OutOfMemoryError:` Java heap space errors.
 
-You can explicitly set the amount of memory Ubooquity is allowed to use (be careful to set a value lower than the actual physical memory of your hardware).
+You can explicitly set the amount of memory Ubooquity is allowed to use (be careful to set a value lower than the actual physical memory of your hardware). Value is a number of megabytes ( put just a number, without MB)
 
 If no value is set it will default to 512MB.
-
-
 
 ## Support Info
 
