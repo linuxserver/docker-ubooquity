@@ -39,7 +39,7 @@ p11-kit-trust-0.23.14-r0
 pcsc-lite-libs-1.8.24-r1
 readline-7.0.003-r1
 scanelf-1.2.3-r0
-shadow-4.5-r1
+shadow-4.5-r2
 ssl_client-1.29.3-r10
 tzdata-2019a-r0
 xz-5.2.4-r0
