@@ -1,6 +1,6 @@
 alpine-baselayout-3.1.2-r0
 alpine-keys-2.1-r2
-apk-tools-2.10.4-r1
+apk-tools-2.10.4-r2
 bash-5.0.0-r0
 busybox-1.30.1-r2
 ca-certificates-20190108-r0
@@ -8,7 +8,7 @@ ca-certificates-cacert-20190108-r0
 coreutils-8.31-r0
 java-cacerts-1.0-r0
 java-common-0.2-r0
-keyutils-libs-1.6-r0
+keyutils-libs-1.6-r1
 krb5-conf-1.0-r1
 krb5-libs-1.17-r0
 lcms2-2.9-r1
