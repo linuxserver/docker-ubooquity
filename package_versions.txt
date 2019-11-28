@@ -33,7 +33,7 @@ ncurses-libs-6.1_p20190518-r0
 ncurses-terminfo-6.1_p20190518-r0
 ncurses-terminfo-base-6.1_p20190518-r0
 nspr-4.20-r0
-nss-3.44-r0
+nss-3.44.3-r0
 openjdk8-jre-base-8.222.10-r0
 openjdk8-jre-lib-8.222.10-r0
 p11-kit-0.23.16.1-r0
