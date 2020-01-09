@@ -19,7 +19,7 @@ libcom_err-1.45.4-r0
 libcrypto1.1-1.1.1d-r3
 libffi-3.2.1-r6
 libgcc-9.2.0-r3
-libjpeg-turbo-2.0.3-r0
+libjpeg-turbo-2.0.4-r0
 liblksctp-1.0.18-r1
 libssl1.1-1.1.1d-r3
 libstdc++-9.2.0-r3
