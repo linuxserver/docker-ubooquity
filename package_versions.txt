@@ -19,8 +19,10 @@ libcom_err-1.45.5-r0
 libcrypto1.1-1.1.1g-r0
 libffi-3.2.1-r6
 libgcc-9.2.0-r4
+libintl-0.20.1-r2
 libjpeg-turbo-2.0.4-r0
 liblksctp-1.0.18-r1
+libproc-3.3.16-r0
 libssl1.1-1.1.1g-r0
 libstdc++-9.2.0-r4
 libtasn1-4.15.0-r0
@@ -38,6 +40,7 @@ openjdk8-jre-lib-8.242.08-r0
 p11-kit-0.23.18.1-r0
 p11-kit-trust-0.23.18.1-r0
 pcsc-lite-libs-1.8.25-r2
+procps-3.3.16-r0
 readline-8.0.1-r0
 scanelf-1.2.4-r0
 shadow-4.7-r1
