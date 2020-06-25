@@ -20,7 +20,7 @@ libcrypto1.1-1.1.1g-r0
 libffi-3.2.1-r6
 libgcc-9.2.0-r4
 libintl-0.20.1-r2
-libjpeg-turbo-2.0.4-r0
+libjpeg-turbo-2.0.4-r1
 liblksctp-1.0.18-r1
 libproc-3.3.16-r0
 libssl1.1-1.1.1g-r0
