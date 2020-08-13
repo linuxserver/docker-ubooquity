@@ -35,8 +35,8 @@ ncurses-libs-6.2_p20200523-r0
 ncurses-terminfo-base-6.2_p20200523-r0
 nspr-4.27-r0
 nss-3.55-r0
-openjdk8-jre-base-8.242.08-r2
-openjdk8-jre-lib-8.242.08-r2
+openjdk8-jre-base-8.252.09-r0
+openjdk8-jre-lib-8.252.09-r0
 p11-kit-0.23.20-r5
 p11-kit-trust-0.23.20-r5
 pcsc-lite-libs-1.8.26-r0
