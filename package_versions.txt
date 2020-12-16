@@ -16,14 +16,14 @@ libacl-2.2.53-r0
 libattr-2.4.48-r0
 libc-utils-0.7.2-r3
 libcom_err-1.45.6-r0
-libcrypto1.1-1.1.1g-r0
+libcrypto1.1-1.1.1i-r0
 libffi-3.3-r2
 libgcc-9.3.0-r2
 libintl-0.20.2-r0
 libjpeg-turbo-2.0.5-r0
 liblksctp-1.0.18-r1
 libproc-3.3.16-r0
-libssl1.1-1.1.1g-r0
+libssl1.1-1.1.1i-r0
 libstdc++-9.3.0-r2
 libtasn1-4.16.0-r1
 libtls-standalone-2.9.1-r1
@@ -37,8 +37,8 @@ nspr-4.27-r0
 nss-3.59-r0
 openjdk8-jre-base-8.252.09-r0
 openjdk8-jre-lib-8.252.09-r0
-p11-kit-0.23.20-r5
-p11-kit-trust-0.23.20-r5
+p11-kit-0.23.22-r0
+p11-kit-trust-0.23.22-r0
 pcsc-lite-libs-1.8.26-r0
 procps-3.3.16-r0
 readline-8.0.4-r0
