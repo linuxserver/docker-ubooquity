@@ -34,7 +34,7 @@ musl-utils-1.1.24-r10
 ncurses-libs-6.2_p20200523-r0
 ncurses-terminfo-base-6.2_p20200523-r0
 nspr-4.27-r0
-nss-3.59-r0
+nss-3.60-r0
 openjdk8-jre-base-8.252.09-r0
 openjdk8-jre-lib-8.252.09-r0
 p11-kit-0.23.22-r0
@@ -46,7 +46,7 @@ scanelf-1.2.6-r0
 shadow-4.8.1-r0
 sqlite-libs-3.32.1-r0
 ssl_client-1.31.1-r19
-tzdata-2020c-r1
+tzdata-2020f-r0
 xz-5.2.5-r0
 xz-libs-5.2.5-r0
 zlib-1.2.11-r3
