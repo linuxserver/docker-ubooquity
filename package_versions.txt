@@ -16,14 +16,14 @@ libacl-2.2.53-r0
 libattr-2.4.48-r0
 libc-utils-0.7.2-r3
 libcom_err-1.45.7-r0
-libcrypto1.1-1.1.1j-r0
+libcrypto1.1-1.1.1k-r0
 libffi-3.3-r2
 libgcc-10.2.1_pre1-r3
 libintl-0.20.2-r2
 libjpeg-turbo-2.0.6-r0
 liblksctp-1.0.18-r1
 libproc-3.3.16-r0
-libssl1.1-1.1.1j-r0
+libssl1.1-1.1.1k-r0
 libstdc++-10.2.1_pre1-r3
 libtasn1-4.16.0-r1
 libtls-standalone-2.9.1-r1
