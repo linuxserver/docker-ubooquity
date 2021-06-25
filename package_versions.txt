@@ -33,7 +33,7 @@ musl-1.2.2-r1
 musl-utils-1.2.2-r1
 ncurses-libs-6.2_p20210109-r0
 ncurses-terminfo-base-6.2_p20210109-r0
-nspr-4.29-r0
+nspr-4.31-r0
 nss-3.66-r0
 openjdk8-jre-base-8.275.01-r0
 openjdk8-jre-lib-8.275.01-r0
