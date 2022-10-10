@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bash
+
+# make our folders
+mkdir -p \
+    config/fonts
+
+# copy config
+if [[ ! -f /config/preferences.json ]]; then
+    cp /defaults/preferences.json /config/preferences.json
+fi
+
+# permissions
+chown -R abc:abc \
+    /config \
+    /app/ubooquity
