@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+JAVAMEM=${MAXMEM:-512}
+
+exec \
+    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 2203" \
+        cd /app/ubooquity s6-setuidgid abc java -Xmx"$JAVAMEM"m \
+        -jar /app/ubooquity/Ubooquity.jar \
+        --headless --host 0.0.0.0 --remoteadmin \
+        --workdir /config
