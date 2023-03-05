@@ -94,12 +94,12 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - MAXMEM=<maxmem>
+      - MAXMEM=
     volumes:
-      - <path to data>:/config
-      - <path to books>:/books
-      - <path to comics>:/comics
-      - <path to raw files>:/files
+      - /path/to/data:/config
+      - /path/to/books:/books
+      - /path/to/comics:/comics
+      - /path/to/raw/files:/files
     ports:
       - 2202:2202
       - 2203:2203
@@ -114,13 +114,13 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
-  -e MAXMEM=<maxmem> \
+  -e MAXMEM= \
   -p 2202:2202 \
   -p 2203:2203 \
-  -v <path to data>:/config \
-  -v <path to books>:/books \
-  -v <path to comics>:/comics \
-  -v <path to raw files>:/files \
+  -v /path/to/data:/config \
+  -v /path/to/books:/books \
+  -v /path/to/comics:/comics \
+  -v /path/to/raw/files:/files \
   --restart unless-stopped \
   lscr.io/linuxserver/ubooquity:latest
 
@@ -137,7 +137,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e MAXMEM=<maxmem>` | To set the maximum memory. ( ex: set '1024' for 1GB ) |
+| `-e MAXMEM=` | To set the maximum memory. ( ex: set '1024' for 1GB ) |
 | `-v /config` | Config files and database for ubooquity. |
 | `-v /books` | Location of books. |
 | `-v /comics` | Location of comics. |
@@ -252,6 +252,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **05.03.23:** - Rebase to Alpine 3.17.
 * **10.10.22:** - Rebasing to alpine 3.16, migrate to s6v3.
 * **23.01.21:** - Rebasing to alpine 3.13.
 * **01.06.20:** - Rebasing to alpine 3.12.
