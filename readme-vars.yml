@@ -24,13 +24,13 @@ param_usage_include_net: false
 param_usage_include_env: true
 param_env_vars:
   - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
-  - { env_var: "MAXMEM", env_value: "<maxmem>", desc: "To set the maximum memory. ( ex: set '1024' for 1GB )" }
+  - { env_var: "MAXMEM", env_value: "", desc: "To set the maximum memory. ( ex: set '1024' for 1GB )" }
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Config files and database for ubooquity." }
-  - { vol_path: "/books", vol_host_path: "<path to books>", desc: "Location of books." }
-  - { vol_path: "/comics", vol_host_path: "<path to comics>", desc: "Location of comics." }
-  - { vol_path: "/files", vol_host_path: "<path to raw files>", desc: "Location of raw files." }
+  - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "Config files and database for ubooquity." }
+  - { vol_path: "/books", vol_host_path: "/path/to/books", desc: "Location of books." }
+  - { vol_path: "/comics", vol_host_path: "/path/to/comics", desc: "Location of comics." }
+  - { vol_path: "/files", vol_host_path: "/path/to/raw/files", desc: "Location of raw files." }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "2202", internal_port: "2202", port_desc: "The library port." }
@@ -68,6 +68,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "05.03.23:", desc: "Rebase to Alpine 3.17." }
   - { date: "10.10.22:", desc: "Rebasing to alpine 3.16, migrate to s6v3." }
   - { date: "23.01.21:", desc: "Rebasing to alpine 3.13." }
   - { date: "01.06.20:", desc: "Rebasing to alpine 3.12." }
