@@ -61,7 +61,7 @@ libacl                     2.3.1-r0               apk
 libattr                    2.5.1-r1               apk           
 libbsd                     0.11.6-r2              apk           
 libc-utils                 0.7.2-r3               apk           
-libcom_err                 1.46.5-r0              apk           
+libcom_err                 1.46.6-r0              apk           
 libcrypto1.1               1.1.1t-r0              apk           
 libcurl                    7.83.1-r6              apk           
 libffi                     3.4.2-r1               apk           
