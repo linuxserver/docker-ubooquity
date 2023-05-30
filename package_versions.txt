@@ -23,7 +23,7 @@ commons-compress           1.13                   java-archive
 commons-io                 2.5                    java-archive  
 commons-logging            1.2                    java-archive  
 coreutils                  9.1-r0                 apk           
-curl                       8.1.0-r1               apk           
+curl                       8.1.1-r1               apk           
 dnsns                                             java-archive  
 fontbox                    2.0.6                  java-archive  
 h2                         1.4.193                java-archive  
@@ -64,7 +64,7 @@ libbsd                     0.11.7-r0              apk
 libc-utils                 0.7.2-r3               apk           
 libcom_err                 1.46.6-r0              apk           
 libcrypto3                 3.0.8-r4               apk           
-libcurl                    8.1.0-r1               apk           
+libcurl                    8.1.1-r1               apk           
 libffi                     3.4.4-r0               apk           
 libgcc                     12.2.1_git20220924-r4  apk           
 libintl                    0.21.1-r1              apk           
@@ -85,8 +85,8 @@ management-agent                                  java-archive
 musl                       1.2.3-r5               apk           
 musl-utils                 1.2.3-r5               apk           
 nashorn                    1.8.0_372-b07          java-archive  
-ncurses-libs               6.3_p20221119-r0       apk           
-ncurses-terminfo-base      6.3_p20221119-r0       apk           
+ncurses-libs               6.3_p20221119-r1       apk           
+ncurses-terminfo-base      6.3_p20221119-r1       apk           
 netcat-openbsd             1.130-r4               apk           
 nghttp2-libs               1.51.0-r0              apk           
 nspr                       4.35-r0                apk           
