@@ -7,37 +7,32 @@ project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/ma
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # development version
 development_versions: false
-
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_net: false
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
-  - { env_var: "MAXMEM", env_value: "", desc: "To set the maximum memory. ( ex: set '1024' for 1GB )" }
+  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London."}
+  - {env_var: "MAXMEM", env_value: "", desc: "To set the maximum memory. ( ex: set '1024' for 1GB )"}
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "Config files and database for ubooquity." }
-  - { vol_path: "/books", vol_host_path: "/path/to/books", desc: "Location of books." }
-  - { vol_path: "/comics", vol_host_path: "/path/to/comics", desc: "Location of comics." }
-  - { vol_path: "/files", vol_host_path: "/path/to/raw/files", desc: "Location of raw files." }
+  - {vol_path: "/config", vol_host_path: "/path/to/data", desc: "Config files and database for ubooquity."}
+  - {vol_path: "/books", vol_host_path: "/path/to/books", desc: "Location of books."}
+  - {vol_path: "/comics", vol_host_path: "/path/to/comics", desc: "Location of comics."}
+  - {vol_path: "/files", vol_host_path: "/path/to/raw/files", desc: "Location of raw files."}
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "2202", internal_port: "2202", port_desc: "The library port." }
-  - { external_port: "2203", internal_port: "2203", port_desc: "The admin port." }
+  - {external_port: "2202", internal_port: "2202", port_desc: "The library port."}
+  - {external_port: "2203", internal_port: "2203", port_desc: "The admin port."}
 param_device_map: false
 cap_add_param: false
-
 # optional container parameters
 opt_param_usage_include_env: false
 opt_param_usage_include_vols: false
@@ -45,7 +40,6 @@ opt_param_usage_include_ports: false
 opt_param_device_map: false
 opt_cap_add_param: false
 optional_block_1: false
-
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -65,24 +59,24 @@ app_setup_block: |
   You can explicitly set the amount of memory Ubooquity is allowed to use (be careful to set a value lower than the actual physical memory of your hardware). Value is a number of megabytes ( put just a number, without MB )
 
   If no value is set it will default to 512MB.
-
 # changelog
 changelogs:
-  - { date: "05.03.23:", desc: "Rebase to Alpine 3.17." }
-  - { date: "10.10.22:", desc: "Rebasing to alpine 3.16, migrate to s6v3." }
-  - { date: "23.01.21:", desc: "Rebasing to alpine 3.13." }
-  - { date: "01.06.20:", desc: "Rebasing to alpine 3.12." }
-  - { date: "19.12.19:", desc: "Rebasing to alpine 3.11." }
-  - { date: "28.06.19:", desc: "Rebasing to alpine 3.10." }
-  - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
-  - { date: "22.02.19:", desc: "Rebasing to alpine 3.9." }
-  - { date: "28.01.19:", desc: "Add pipeline logic and multi arch." }
-  - { date: "15.10.18:", desc: "Upgrade to Ubooquity 2.1.2." }
-  - { date: "23.08.18:", desc: "Rebase to alpine 3.8." }
-  - { date: "09.12.17:", desc: "Rebase to alpine 3.7." }
-  - { date: "07.10.17:", desc: "Upgrade to Ubooquity 2.1.1." }
-  - { date: "16.07.17:", desc: "Upgrade to Ubooquity 2.1.0, see setting up application section for important info for existing v1.x users." }
-  - { date: "26.05.17:", desc: "Rebase to alpine 3.6." }
-  - { date: "08.04.17:", desc: "Switch to java from 3.5 repo, fixes login crashes." }
-  - { date: "06.02.17:", desc: "Rebase to alpine 3.5." }
-  - { date: "06.12.16:", desc: "Initial Release." }
+  - {date: "04.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
+  - {date: "05.03.23:", desc: "Rebase to Alpine 3.17."}
+  - {date: "10.10.22:", desc: "Rebasing to alpine 3.16, migrate to s6v3."}
+  - {date: "23.01.21:", desc: "Rebasing to alpine 3.13."}
+  - {date: "01.06.20:", desc: "Rebasing to alpine 3.12."}
+  - {date: "19.12.19:", desc: "Rebasing to alpine 3.11."}
+  - {date: "28.06.19:", desc: "Rebasing to alpine 3.10."}
+  - {date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag."}
+  - {date: "22.02.19:", desc: "Rebasing to alpine 3.9."}
+  - {date: "28.01.19:", desc: "Add pipeline logic and multi arch."}
+  - {date: "15.10.18:", desc: "Upgrade to Ubooquity 2.1.2."}
+  - {date: "23.08.18:", desc: "Rebase to alpine 3.8."}
+  - {date: "09.12.17:", desc: "Rebase to alpine 3.7."}
+  - {date: "07.10.17:", desc: "Upgrade to Ubooquity 2.1.1."}
+  - {date: "16.07.17:", desc: "Upgrade to Ubooquity 2.1.0, see setting up application section for important info for existing v1.x users."}
+  - {date: "26.05.17:", desc: "Rebase to alpine 3.6."}
+  - {date: "08.04.17:", desc: "Switch to java from 3.5 repo, fixes login crashes."}
+  - {date: "06.02.17:", desc: "Rebase to alpine 3.5."}
+  - {date: "06.12.16:", desc: "Initial Release."}
