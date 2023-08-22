@@ -35,7 +35,6 @@ jaccess                                            java-archive
 jackson-annotations        2.8.4                   java-archive  
 jackson-core               2.8.4                   java-archive  
 jackson-databind           2.8.4                   java-archive  
-java                       1.8.0_372-b07           binary        
 java-cacerts               1.0-r1                  apk           
 java-common                0.5-r0                  apk           
 javadjvu                   0.8.09                  java-archive  
