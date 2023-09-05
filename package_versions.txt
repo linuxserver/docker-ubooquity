@@ -71,7 +71,7 @@ libjpeg-turbo              2.1.5.1-r3              apk
 liblksctp                  1.0.19-r3               apk           
 libmd                      1.0.4-r2                apk           
 libncursesw                6.4_p20230506-r0        apk           
-libproc2                   4.0.3-r1                apk           
+libproc2                   4.0.4-r0                apk           
 libssl3                    3.1.2-r0                apk           
 libstdc++                  12.2.1_git20220924-r10  apk           
 libtasn1                   4.19.0-r1               apk           
@@ -98,7 +98,7 @@ p11-kit                    0.24.1-r2               apk
 p11-kit-trust              0.24.1-r2               apk           
 pcsc-lite-libs             1.9.9-r3                apk           
 pdfbox                     2.0.6                   java-archive  
-procps-ng                  4.0.3-r1                apk           
+procps-ng                  4.0.4-r0                apk           
 readline                   8.2.1-r1                apk           
 resources                  1.8.0_372               java-archive  
 rt                         1.8.0_372               java-archive  
