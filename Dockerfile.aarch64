@@ -15,17 +15,17 @@ RUN \
     unzip && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
-    openjdk8-jre-base && \
+    openjdk17-jre-headless && \
   echo "**** install ubooquity ****" && \
   if [ -z ${UBOOQUITY_VERSION+x} ]; then \
-    UBOOQUITY_VERSION=$(curl -IsL -w %{url_effective} -o /dev/null http://vaemendis.net/ubooquity/service/download.php \
+    UBOOQUITY_VERSION=$(curl -IsL -w %{url_effective} -o /dev/null https://vaemendis.net/ubooquity/service/download.php \
     | sed 's|.*Ubooquity-\([0-9\.]*\).zip|\1|'); \
   fi && \
   mkdir -p \
     /app/ubooquity && \
   curl -o \
   /tmp/ubooquity.zip -L \
-    "http://vaemendis.net/ubooquity/downloads/Ubooquity-${UBOOQUITY_VERSION}.zip" && \
+    "https://vaemendis.net/ubooquity/downloads/Ubooquity-${UBOOQUITY_VERSION}.zip" && \
   unzip /tmp/ubooquity.zip -d /app/ubooquity && \
   echo "**** cleanup ****" && \
   apk del --purge \
