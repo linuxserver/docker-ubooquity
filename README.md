@@ -317,6 +317,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **29.10.23:** - Bump JRE to 17 to support v3.
 * **12.07.23:** - Rebase to Alpine 3.18.
 * **04.07.23:** - Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 * **05.03.23:** - Rebase to Alpine 3.17.
