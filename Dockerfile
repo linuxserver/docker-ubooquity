@@ -15,7 +15,7 @@ RUN \
     unzip && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
-    openjdk17-jre-headless && \
+    openjdk17-jre && \
   echo "**** install ubooquity ****" && \
   if [ -z ${UBOOQUITY_VERSION+x} ]; then \
     UBOOQUITY_VERSION=$(curl -IsL -w %{url_effective} -o /dev/null https://vaemendis.net/ubooquity/service/download.php \
