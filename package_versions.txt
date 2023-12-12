@@ -20,7 +20,7 @@ commons-compress           1.13              java-archive
 commons-io                 2.5               java-archive  
 commons-logging            1.2               java-archive  
 coreutils                  9.3-r1            apk           
-curl                       8.4.0-r0          apk           
+curl                       8.5.0-r0          apk           
 fontbox                    2.0.6             java-archive  
 freetype                   2.13.0-r5         apk           
 giflib                     5.2.1-r4          apk           
@@ -44,7 +44,7 @@ jetty-io                   9.4.0.v20161208   java-archive
 jetty-server               9.4.0.v20161208   java-archive  
 jetty-util                 9.4.0.v20161208   java-archive  
 jopt-simple                4.8               java-archive  
-jq                         1.6-r3            apk           
+jq                         1.6-r4            apk           
 jrt-fs                     17.0.9            java-archive  
 jsoup                      1.8.3             java-archive  
 junrar                     3.0.1-Ubooquity   java-archive  
@@ -55,7 +55,7 @@ libbsd                     0.11.7-r1         apk
 libbz2                     1.0.8-r5          apk           
 libc-utils                 0.7.2-r5          apk           
 libcrypto3                 3.1.4-r1          apk           
-libcurl                    8.4.0-r0          apk           
+libcurl                    8.5.0-r0          apk           
 libffi                     3.4.4-r2          apk           
 libidn2                    2.3.4-r1          apk           
 libintl                    0.21.1-r7         apk           
