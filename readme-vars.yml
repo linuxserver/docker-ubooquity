@@ -17,13 +17,12 @@ development_versions: false
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_net: false
-param_usage_include_env: true
-param_env_vars:
-  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London."}
+opt_param_usage_include_env: true
+opt_param_env_vars:
   - {env_var: "MAXMEM", env_value: "", desc: "To set the maximum memory. ( ex: set '1024' for 1GB )"}
 param_usage_include_vols: true
 param_volumes:
-  - {vol_path: "/config", vol_host_path: "/path/to/data", desc: "Config files and database for ubooquity."}
+  - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/data", desc: "Config files and database for ubooquity."}
   - {vol_path: "/books", vol_host_path: "/path/to/books", desc: "Location of books."}
   - {vol_path: "/comics", vol_host_path: "/path/to/comics", desc: "Location of comics."}
   - {vol_path: "/files", vol_host_path: "/path/to/raw/files", desc: "Location of raw files."}
@@ -31,15 +30,7 @@ param_usage_include_ports: true
 param_ports:
   - {external_port: "2202", internal_port: "2202", port_desc: "The library port."}
   - {external_port: "2203", internal_port: "2203", port_desc: "The admin port."}
-param_device_map: false
-cap_add_param: false
-# optional container parameters
-opt_param_usage_include_env: false
-opt_param_usage_include_vols: false
-opt_param_usage_include_ports: false
-opt_param_device_map: false
-opt_cap_add_param: false
-optional_block_1: false
+
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -61,6 +52,7 @@ app_setup_block: |
   If no value is set it will default to 512MB.
 # changelog
 changelogs:
+  - {date: "20.03.24:", desc: "Rebase to Alpine 3.19."}
   - {date: "29.10.23:", desc: "Bump JRE to 17 to support v3."}
   - {date: "12.07.23:", desc: "Rebase to Alpine 3.18."}
   - {date: "04.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
