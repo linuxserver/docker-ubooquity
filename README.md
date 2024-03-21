@@ -92,9 +92,9 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - MAXMEM=
+      - MAXMEM= #optional
     volumes:
-      - /path/to/data:/config
+      - /path/to/ubooquity/data:/config
       - /path/to/books:/books
       - /path/to/comics:/comics
       - /path/to/raw/files:/files
@@ -112,10 +112,10 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
-  -e MAXMEM= \
+  -e MAXMEM= `#optional` \
   -p 2202:2202 \
   -p 2203:2203 \
-  -v /path/to/data:/config \
+  -v /path/to/ubooquity/data:/config \
   -v /path/to/books:/books \
   -v /path/to/comics:/comics \
   -v /path/to/raw/files:/files \
@@ -301,6 +301,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **20.03.24:** - Rebase to Alpine 3.19.
 * **29.10.23:** - Bump JRE to 17 to support v3.
 * **12.07.23:** - Rebase to Alpine 3.18.
 * **04.07.23:** - Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
