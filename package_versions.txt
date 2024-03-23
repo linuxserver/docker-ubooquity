@@ -12,8 +12,8 @@ brotli-libs                1.1.0-r1              apk
 busybox                    1.36.1-r15            apk             
 busybox-binsh              1.36.1-r15            apk             
 c-ares                     1.24.0-r1             apk             
-ca-certificates            20230506-r0           apk             
-ca-certificates-bundle     20230506-r0           apk             
+ca-certificates            20240226-r0           apk             
+ca-certificates-bundle     20240226-r0           apk             
 common-image               3.3.1                 java-archive    
 common-io                  3.3.1                 java-archive    
 common-lang                3.3.1                 java-archive    
@@ -27,7 +27,7 @@ coreutils-sha512sum        9.4-r2                apk
 curl                       8.5.0-r0              apk             
 fontbox                    2.0.6                 java-archive    
 freetype                   2.13.2-r0             apk             
-giflib                     5.2.1-r5              apk             
+giflib                     5.2.2-r0              apk             
 h2                         1.4.193               java-archive    
 imageio                    1.0                   java-archive    
 imageio-core               3.3.1                 java-archive    
