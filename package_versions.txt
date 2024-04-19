@@ -5,7 +5,7 @@ alpine-baselayout-data     3.4.3-r2              apk
 alpine-keys                2.4-r1                apk             
 alpine-release             3.19.1-r0             apk             
 alsa-lib                   1.2.10-r0             apk             
-apk-tools                  2.14.3-r1             apk             
+apk-tools                  2.14.4-r0             apk             
 bash                       5.2.21-r0             apk             
 bcprov-jdk15on             1.53                  java-archive    
 brotli-libs                1.1.0-r1              apk             
@@ -25,6 +25,7 @@ coreutils-env              9.4-r2                apk
 coreutils-fmt              9.4-r2                apk             
 coreutils-sha512sum        9.4-r2                apk             
 curl                       8.5.0-r0              apk             
+findutils                  4.9.0-r5              apk             
 fontbox                    2.0.6                 java-archive    
 freetype                   2.13.2-r0             apk             
 giflib                     5.2.2-r0              apk             
