@@ -14,6 +14,7 @@ busybox-binsh              1.36.1-r15            apk
 c-ares                     1.27.0-r0             apk             
 ca-certificates            20240226-r0           apk             
 ca-certificates-bundle     20240226-r0           apk             
+catatonit                  0.2.0-r0              apk             
 common-image               3.3.1                 java-archive    
 common-io                  3.3.1                 java-archive    
 common-lang                3.3.1                 java-archive    
