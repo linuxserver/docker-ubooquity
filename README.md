@@ -59,9 +59,6 @@ The architectures supported by this image are:
 
 ## Application Setup
 
-**IMPORTANT**
-Ubooquity has now been upgraded to [version 2](http://vaemendis.net/ubooquity/article19/ubooquity-2-1-0) and for existing v1.x users we recommend cleaning your appdata and reinstalling, due to changes in the application itself making the two versions essentially incompatible with each other. Also the admin page and library pages are now on separate ports as detailed below.
-
 Access the admin page at `http://<your-ip>:2203/ubooquity/admin` and set a password.
 
 Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
@@ -301,6 +298,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **06.06.24:** - Rebase to Alpine 3.20.
 * **20.03.24:** - Rebase to Alpine 3.19.
 * **29.10.23:** - Bump JRE to 17 to support v3.
 * **12.07.23:** - Rebase to Alpine 3.18.

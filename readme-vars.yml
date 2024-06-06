@@ -6,17 +6,15 @@ project_url: "https://vaemendis.net/ubooquity/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ubooquity-banner.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-project_blurb_optional_extras_enabled: false
+
 # supported architectures
 available_architectures:
   - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
   - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-# development version
-development_versions: false
+
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
-param_usage_include_net: false
 opt_param_usage_include_env: true
 opt_param_env_vars:
   - {env_var: "MAXMEM", env_value: "", desc: "To set the maximum memory. ( ex: set '1024' for 1GB )"}
@@ -34,9 +32,6 @@ param_ports:
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  **IMPORTANT**
-  Ubooquity has now been upgraded to [version 2](http://vaemendis.net/ubooquity/article19/ubooquity-2-1-0) and for existing v1.x users we recommend cleaning your appdata and reinstalling, due to changes in the application itself making the two versions essentially incompatible with each other. Also the admin page and library pages are now on separate ports as detailed below.
-
   Access the admin page at `http://<your-ip>:2203/ubooquity/admin` and set a password.
 
   Then you can access the webui at `http://<your-ip>:2202/ubooquity/`
@@ -52,6 +47,7 @@ app_setup_block: |
   If no value is set it will default to 512MB.
 # changelog
 changelogs:
+  - {date: "06.06.24:", desc: "Rebase to Alpine 3.20."}
   - {date: "20.03.24:", desc: "Rebase to Alpine 3.19."}
   - {date: "29.10.23:", desc: "Bump JRE to 17 to support v3."}
   - {date: "12.07.23:", desc: "Rebase to Alpine 3.18."}
