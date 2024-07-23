@@ -51,7 +51,7 @@ jetty-server               9.4.0.v20161208   java-archive
 jetty-util                 9.4.0.v20161208   java-archive    
 jopt-simple                4.8               java-archive    
 jq                         1.7.1-r0          apk             
-jrt-fs                     17.0.11           java-archive    
+jrt-fs                     17.0.12           java-archive    
 jsoup                      1.8.3             java-archive    
 junrar                     3.0.1-Ubooquity   java-archive    
 lcms2                      2.16-r0           apk             
@@ -90,8 +90,8 @@ ncurses-terminfo-base      6.4_p20240420-r0  apk
 netcat-openbsd             1.226-r0          apk             
 nghttp2-libs               1.62.1-r0         apk             
 oniguruma                  6.9.9-r0          apk             
-openjdk17-jre              17.0.11_p9-r0     apk             
-openjdk17-jre-headless     17.0.11_p9-r0     apk             
+openjdk17-jre              17.0.12_p7-r0     apk             
+openjdk17-jre-headless     17.0.12_p7-r0     apk             
 p11-kit                    0.25.3-r0         apk             
 p11-kit-trust              0.25.3-r0         apk             
 pdfbox                     2.0.6             java-archive    
