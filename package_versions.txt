@@ -1,5 +1,5 @@
 NAME                       VERSION           TYPE           
-Ubooquity                  2.1.4             java-archive    
+Ubooquity                  2.1.5             java-archive    
 alpine-baselayout          3.6.5-r0          apk             
 alpine-baselayout-data     3.6.5-r0          apk             
 alpine-keys                2.4-r1            apk             
