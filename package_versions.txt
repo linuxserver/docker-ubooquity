@@ -7,7 +7,7 @@ alpine-keys              2.5-r0            apk
 alpine-release           3.22.1-r0         apk             
 alsa-lib                 1.2.14-r0         apk             
 annotations              24.0.1            java-archive    
-apk-tools                2.14.9-r2         apk             
+apk-tools                2.14.9-r3         apk             
 bash                     5.2.37-r0         apk             
 bcprov-jdk18on           1.78.1            java-archive    
 brotli-libs              1.1.0-r2          apk             
@@ -70,7 +70,7 @@ kotlin-stdlib-common     1.8.22            java-archive
 kotlin-stdlib-jdk7       1.8.22            java-archive    
 kotlin-stdlib-jdk8       1.8.22            java-archive    
 lcms2                    2.16-r0           apk             
-libapk2                  2.14.9-r2         apk             
+libapk2                  2.14.9-r3         apk             
 libattr                  2.5.2-r2          apk             
 libbsd                   0.12.2-r0         apk             
 libbz2                   1.0.8-r6          apk             
