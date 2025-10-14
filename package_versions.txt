@@ -4,7 +4,7 @@ acl-libs                 2.3.2-r1          apk
 alpine-baselayout        3.7.0-r0          apk             
 alpine-baselayout-data   3.7.0-r0          apk             
 alpine-keys              2.5-r0            apk             
-alpine-release           3.22.1-r0         apk             
+alpine-release           3.22.2-r0         apk             
 alsa-lib                 1.2.14-r0         apk             
 annotations              24.0.1            java-archive    
 apk-tools                2.14.9-r3         apk             
