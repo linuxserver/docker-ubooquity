@@ -11,8 +11,8 @@ apk-tools                2.14.9-r3         apk
 bash                     5.2.37-r0         apk             
 bcprov-jdk18on           1.78.1            java-archive    
 brotli-libs              1.1.0-r2          apk             
-busybox                  1.37.0-r19        apk             
-busybox-binsh            1.37.0-r19        apk             
+busybox                  1.37.0-r20        apk             
+busybox-binsh            1.37.0-r20        apk             
 c-ares                   1.34.5-r0         apk             
 ca-certificates          20250911-r0       apk             
 ca-certificates-bundle   20250911-r0       apk             
@@ -59,7 +59,7 @@ jetty-server             11.0.15           java-archive
 jetty-util               11.0.15           java-archive    
 jmustache                1.15              java-archive    
 jopt-simple              5.0.4             java-archive    
-jq                       1.8.0-r0          apk             
+jq                       1.8.1-r0          apk             
 jrt-fs                   17.0.17           java-archive    
 jsoup                    1.16.1            java-archive    
 junrar                   3.0.1-Ubooquity   java-archive    
@@ -120,7 +120,7 @@ shadow                   4.17.3-r0         apk
 skalibs-libs             2.14.4.0-r0       apk             
 slf4j-api                2.0.7             java-archive    
 snakeyaml                2.0               java-archive    
-ssl_client               1.37.0-r19        apk             
+ssl_client               1.37.0-r20        apk             
 tzdata                   2025b-r0          apk             
 utmps-libs               0.1.3.1-r0        apk             
 zlib                     1.3.1-r2          apk             
