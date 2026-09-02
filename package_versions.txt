@@ -33,7 +33,7 @@ curl                     8.14.1-r3         apk
 findutils                4.10.0-r0         apk             
 fontbox                  3.0.2             java-archive    
 freetype                 2.13.3-r0         apk             
-giflib                   5.2.2-r1          apk             
+giflib                   5.2.2-r2          apk             
 h2                       2.2.222           java-archive    
 imageio                  1.0               java-archive    
 imageio-core             3.9.4             java-archive    
